@@ -1,0 +1,129 @@
+body {
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+.card {
+    background-color: #fff;
+    margin: 30px 0px;
+    cursor: pointer;
+    width: 400px;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    transform: scale(1);
+    transition: box-shadow linear 200ms, transform linear 200ms;
+}
+
+.card:hover {
+    box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(https://images2.alphacoders.com/842/842932.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
+
+.card-img-2 {
+    background-image: url(https://vignette.wikia.nocookie.net/world-of-homestuck/images/5/5e/Mountain-Home-Outdoor-Living.jpg/revision/latest?cb=20131117221552);
+}
+
+.card-img-3 {
+    background-image: url(http://wallpapercraze.com/images/wallpapers/house_on_mountain_w1.jpeg);
+}
+
+.card-infor {
+    padding: 0px 25px;
+}
+
+.card-infor-title {
+    font-size: 1.2em;
+    color: #c2c2c2;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.card-infor-text {
+    font-size: 1.4em;
+    color: #424242;
+    font-weight: 300;
+}
+
+.card-infor-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.card-infor-stars {
+    width: 40px;
+    background-image: linear-gradient(to right, rgba(238, 171, 28, .5), rgb(238, 171, 28));
+    font-weight: 700;
+    color: #fff;
+    padding: 3px 12px 3px 15px;
+    border-radius: 50px;
+}
+
+.card-infor-stars:after {
+    content: '\2605';
+    position: relative;
+}
+
+.card-infor-views {
+    color: #c2c2c2;
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 15px; 
+}
+
+.card-infor-priceOff {
+    position: absolute;
+    color: #c2c2c2; 
+    font-size: 1.4em;
+    right: 0;
+    margin-right: 25px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.card-infor-save {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 300;
+    color: #52b9bd;
+    margin-bottom: 20px;
+}
+
+.card-infor-price {
+    position: absolute;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #424242;
+    right: 0;
+    bottom: 75px;
+    margin-right: 25px;
+}
+
+.card-infor-viewnow {
+    font-size: 1em;
+    color: #a7a7a7;
+    padding: 20px 0px;
+    border-top: 1px solid #dfdfdf;
+}
+
+@media (max-width: 790px) {
+    .card {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .card:hover {
+        transform: none;
+        box-shadow: none;
+        border: 1px solid transparent;
+    }
+}
